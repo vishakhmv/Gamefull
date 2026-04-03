@@ -44,8 +44,8 @@ header {
 .secret {
   margin-left: auto;
   margin-right: 1.5rem;
-  height: 6vmin;
-  width: 17vmin;
+  height: 3.2rem;
+  width: 10rem;
   border-radius: 10px;
   font-size: 1rem;
   background-color: gold;
@@ -64,11 +64,12 @@ main {
   justify-content: center;
   align-items: center;
   gap: 5rem;
+  padding: 2rem;
 }
 
 .card {
-  height: 50vmin;
-  width: 40vmin;
+  height: 30rem;
+  width: 22rem;
   background-color: #041241;
   border-radius: 20px;
   transition: all 0.3s ease;
@@ -85,8 +86,8 @@ main {
 }
 
 .simon_master_logo {
-  height: 17vmin;
-  width: 28vmin;
+  height: 9rem;
+  width: 15rem;
   box-shadow: 0 5px 15px #8a5cf6;
 }
 
@@ -124,8 +125,8 @@ main {
 }
 
 .dp_logo {
-  height: 17vmin;
-  width: 28vmin;
+  height: 10rem;
+  width: 15rem;
 }
 
 .drum {
@@ -156,8 +157,8 @@ main {
 }
 
 .ttg_logo {
-  height: 17vmin;
-  width: 23vmin;
+  height: 9rem;
+  width: 10rem;
 }
 
 .tic {
@@ -179,3 +180,4 @@ main {
   font-family: "Orbitron", sans-serif;
   margin-top: -2rem;
 }
+
