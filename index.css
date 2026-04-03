@@ -52,7 +52,7 @@ header {
   transition: all 0.3s ease;
 }
 
-.secrete:hover {
+.secret:hover {
   transform: translate(3px, -3px);
   box-shadow: -3px 3px 13px rgba(138, 92, 246, 0.6);
 }
@@ -181,3 +181,52 @@ main {
   margin-top: -2rem;
 }
 
+@media (max-width: 1200px) {
+  main {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 22rem;
+    height: 30rem;
+  }
+}
+
+@media (max-width: 850px) {
+  header {
+    flex-direction: column;
+    padding: 1.5rem 1rem;
+  }
+
+  .secret {
+    width: 80vw;
+    height: 3.5rem;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .main_logo,
+  .secret {
+    margin: 0;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 22rem;
+    height: 30rem;
+  }
+
+  .drum,
+  .pulse {
+    font-size: 3.5rem;
+    margin-top: -2.5rem;
+  }
+
+  .tic,
+  .tac,
+  .goo {
+    font-size: 2.5rem;
+  }
+}
