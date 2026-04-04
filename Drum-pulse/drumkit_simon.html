@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Drum Pulse Drum Kit Simon</title>
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link rel="stylesheet" href="drumkit_simon.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <button class="how_to_use_btn" onclick="location.href='dks_how_to_play.html'">How to Play</button>
+  <h1 class="title">Drum</h1><img class="logo" src="images/main.png" alt="Drum kit logo"><h1>Pulse</h1>
+  <h2>Drum Kit Simon</h2>
+  <h3 class="highScore">High score : 0</h3>
+  <h3 class="level">Level : 0</h3>
+  <h3 class="time">Time : 00:00:00</h3>
+  <div class="set">
+  <div class="row">
+    <button class="w drum" id="tom-1">w</button>
+    <button class="a drum" id="tom-2">a</button>
+    <button class="s drum" id="tom-3">s</button>
+    <button class="d drum" id="tom-4">d</button>
+    <button class="f drum" id="snare">f</button>
+  </div>
+  <div class="row">
+    <button class="g drum" id="kick-bass">g</button>
+    <button class="h drum" id="tambourine">h</button>
+    <button class="j drum" id="crash">j</button>
+    <button class="k drum" id="open">k</button>
+    <button class="l drum" id="closed">l</button>
+  </div>
+  </div>
+  <button class="start">Start</button>
+  <button class="drumkit_btn" onclick="location.href='index.html'">Try Drum Kit</button>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="drumkit_simon.js" charset="utf-8"></script>
+</body>
+
+</html>

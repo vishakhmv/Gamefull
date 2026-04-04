@@ -1,0 +1,114 @@
+body {
+  margin: 0px;
+  background-color: #1F4068;
+}
+.heading{
+    text-align: center;
+}
+
+
+h1 {
+  display: inline-block;
+  font-size: 4rem;
+  color: #EAF6FF;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #1E90FF;
+}
+
+.logo{
+  height: 8rem;
+  width: 13rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+h2{
+  color: #EAF6FF;
+  font-family: "Arvo", cursive;
+  font-size: 2rem;
+  margin-top: -2rem;
+  text-shadow: 3px 0 #1E90FF;
+}
+
+h3{
+    color: white;
+    font-family: "Arvo",cursive;
+    font-size: 2.5rem;
+}
+
+.instructions {
+    width: 60%;
+    margin: 1rem auto;
+    padding: 2rem 7%;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    text-align: left;
+    border: 2px solid #1E90FF;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    color: #ffffff;
+}
+
+
+li{
+    font-size: 1.4rem;
+    font-family: "Arvo",cursive;
+}
+
+.back_btn {
+  padding: 0.6rem 1.5rem;
+  width: 17rem;
+  height: 3.5rem;
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #0876ad;
+  border: 2px solid white;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.back_btn:hover {
+  background-color: #0d9ad2;
+  box-shadow: 0 4px 4px rgba(10,158,232,0.5);
+}
+
+.last_div{
+    display: flex;
+    justify-content: center;
+}
+
+.yellow-text {
+    color: #FFD700;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 790px) {
+
+  body{
+    padding-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+
+  .logo {
+    width: 4.5rem;
+    height: 3rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+    margin-top: -0.5rem;
+  }
+  h3{
+    font-size: 1.5rem;
+  }
+}
