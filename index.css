@@ -4,6 +4,10 @@
   font-family: "Press Start 2P", cursive;
 }
 
+body{
+  margin: 0;
+}
+
 header {
   display: flex;
   height: auto;
@@ -100,9 +104,27 @@ main {
 
 .simon {
   margin-top: 4rem;
+  display: flex;
   font-size: 2rem;
+  gap: 1px;
+}
+
+.simon span:nth-child(1) {
   color: red;
 }
+.simon span:nth-child(2) {
+  color: rgb(4, 178, 4);
+}
+.simon span:nth-child(3) {
+  color: rgb(60, 60, 252);
+}
+.simon span:nth-child(4) {
+  color: orange;
+}
+.simon span:nth-child(5) {
+  color: rgb(150, 10, 150);
+}
+
 
 .master {
   font-size: 2rem;
@@ -138,14 +160,14 @@ main {
 }
 
 .drum {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #eaf6ff;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #1e90ff;
 }
 
 .pulse {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: #eaf6ff;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #1e90ff;
