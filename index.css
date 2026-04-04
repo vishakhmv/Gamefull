@@ -50,6 +50,7 @@ header {
   font-size: 1rem;
   background-color: gold;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .secret:hover {
@@ -58,13 +59,17 @@ header {
 }
 
 main {
-  background: radial-gradient(circle at center, #26345e, #071545);
-  min-height: 90vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 5rem;
   padding: 2rem;
+  padding-top: 0rem;
+}
+
+.color {
+  background: radial-gradient(circle at center, #26345e, #071545);
 }
 
 .card {
@@ -78,6 +83,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  cursor: pointer;
 }
 
 .card:hover {
@@ -89,6 +95,7 @@ main {
   height: 9rem;
   width: 15rem;
   box-shadow: 0 5px 15px #8a5cf6;
+  margin-top: -2rem;
 }
 
 .simon {
@@ -127,17 +134,18 @@ main {
 .dp_logo {
   height: 10rem;
   width: 15rem;
+  margin-top: 2rem;
 }
 
 .drum {
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #eaf6ff;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #1e90ff;
 }
 
 .pulse {
-  font-size: 5rem;
+  font-size: 4.5rem;
   color: #eaf6ff;
   font-family: "Arvo", cursive;
   text-shadow: 3px 0 #1e90ff;
@@ -165,6 +173,7 @@ main {
   font-size: 3rem;
   color: #ff8c42;
   font-family: "Orbitron", sans-serif;
+  display: inline-block;
 }
 
 .tac {
@@ -172,6 +181,7 @@ main {
   color: #f5f7fa;
   font-family: "Orbitron", sans-serif;
   margin-top: -2rem;
+  display: inline-block;
 }
 
 .goo {
@@ -179,6 +189,23 @@ main {
   color: #ff8c42;
   font-family: "Orbitron", sans-serif;
   margin-top: -2rem;
+  text-align: center;
+}
+
+.quote {
+  color: #ffd700;
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.8;
+}
+
+.quote-div {
+  background-color: transparent;
+  min-height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -201,6 +228,9 @@ main {
   .secret {
     width: 80vw;
     height: 3.5rem;
+  }
+  .quote {
+    font-size: 1.5rem;
   }
 
   main {
