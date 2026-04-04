@@ -1,0 +1,33 @@
+.instructions {
+  font-family: 'Press Start 2P', cursive;
+  color: #FEF2BF;
+  font-size: 1rem;
+  margin: 50px auto;
+  width: 80%;
+  line-height: 2;
+  text-align: left;
+}
+
+#back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1rem;
+  color: #011F3F;
+  background-color: #FEF2BF;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 3px solid #011F3F;
+}
+
+#back-btn:hover {
+  background-color: #FFD700;
+  color: #011F3F;
+  border-color: #FFD700;
+}
+
+body {
+  background-color: #011F3F;
+  text-align: center;
+  padding: 20px;
+}
