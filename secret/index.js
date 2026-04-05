@@ -51,17 +51,18 @@ headerHomeBtn.addEventListener("mouseenter", function () {
   }, 200);
 });
 
-function lockHistory() {
-  for (let i = 0; i < 20; i++) {
-    history.pushState(null, null, window.location.href);
+let isIdentityUnlocked = false;
+
+document.querySelector(".git-btn").addEventListener("click", () => {
+  isIdentityUnlocked = true;
+});
+
+const handleIdentityClick = () => {
+  if (isIdentityUnlocked) {
+    window.location.replace("../index.html");
   }
-}
-lockHistory();
-
-window.onpopstate = function () {
-  lockHistory();
-
-  setTimeout(() => {
-    alert("You can't return to the home page using this method.");
-  }, 0);
 };
+document
+  .querySelector(".main_logo")
+  .addEventListener("click", handleIdentityClick);
+document.querySelector(".title").addEventListener("click", handleIdentityClick);
