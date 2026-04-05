@@ -27,6 +27,7 @@ document
     setTimeout(function () {
       document.querySelector("main").classList.remove("wrong");
     }, 200);
+    document.querySelector(".second-div h2").remove();
 
     this.remove();
   });
