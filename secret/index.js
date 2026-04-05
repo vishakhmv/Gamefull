@@ -52,7 +52,7 @@ headerHomeBtn.addEventListener("mouseenter", function () {
 });
 
 function lockHistory() {
-  for (let i = 0; i < 40; i++) {
+  for (let i = 0; i < 20; i++) {
     history.pushState(null, null, window.location.href);
   }
 }
