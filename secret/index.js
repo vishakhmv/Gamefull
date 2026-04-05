@@ -1,7 +1,12 @@
+window.addEventListener("load", () => {
+  let a = new Audio("sounds/fooled.mpeg");
+  a.play();
+});
+
 document
   .querySelector(".first-demo-home")
   .addEventListener("click", function () {
-    var w = new Audio("../simon-master/sounds/wrong.mp3");
+    let w = new Audio("../simon-master/sounds/wrong.mp3");
     w.play();
     document.querySelector("main").classList.add("wrong");
     setTimeout(function () {
@@ -16,7 +21,7 @@ document
 document
   .querySelector(".second-demo-home")
   .addEventListener("click", function () {
-    var w = new Audio("../simon-master/sounds/wrong.mp3");
+    let w = new Audio("../simon-master/sounds/wrong.mp3");
     w.play();
     document.querySelector("main").classList.add("wrong");
     setTimeout(function () {
@@ -31,6 +36,8 @@ const instructionText = document.querySelector(".second-div > h2");
 const secondBtnContainer = document.querySelector(".s-d-h-div");
 
 headerHomeBtn.addEventListener("mouseenter", function () {
+  let v = new Audio("sounds/home-btn.mpeg");
+  v.play();
   this.classList.add("erase-animation");
   instructionText.innerText =
     "The button that redirects you to the home page is here";
