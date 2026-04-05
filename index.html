@@ -17,7 +17,10 @@
         <h1 class="gamo">Gamo</h1>
         <h1 class="rithm">rithm</h1>
       </div>
-      <button class="secret" onclick="window.location.href = '/secret/index.html'">
+      <button
+        class="secret"
+        onclick="window.location.href = '/secret/index.html'"
+      >
         secret
       </button>
     </header>
@@ -70,4 +73,17 @@
       </main>
     </div>
   </body>
+  <script>
+    window.addEventListener("load", () => {
+      alert(
+        "Welcome to Gamefull!\n\n" +
+          "Please read the following carefully:\n" +
+          "1. This page uses audio for certain events—please check your volume.\n" +
+          "2. This page may restrict the use of your browser back button in some cases.\n" +
+          "3. It is strongly recommended to open this web page in a new browser tab so your main browsing history stays safe.\n" +
+          "4. We do not access your browsing history from other tabs.\n\n" +
+          "Thank you for visiting Gamefull"
+      );
+    });
+  </script>
 </html>
