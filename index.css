@@ -4,7 +4,7 @@
   font-family: "Press Start 2P", cursive;
 }
 
-body{
+body {
   margin: 0;
 }
 
@@ -55,11 +55,25 @@ header {
   background-color: gold;
   transition: all 0.3s ease;
   cursor: pointer;
+  color: #041241;
+
+  border: 3px solid transparent;
+  background: 
+    linear-gradient(gold, gold) padding-box,
+    conic-gradient(
+        from var(--angle),
+        #8a5cf6 0deg 90deg,
+        #f5f7fa 90deg 180deg,
+        #8a5cf6 180deg 270deg,
+        #f5f7fa 270deg 360deg
+      )
+      border-box;
+  animation: rotate-border 10s linear infinite;
 }
 
 .secret:hover {
-  transform: translate(3px, -3px);
-  box-shadow: -3px 3px 13px rgba(138, 92, 246, 0.6);
+  box-shadow: 0 0 13px rgba(138, 92, 246, 0.6);
+  transform: translateY(-6px) scale(1.02);
 }
 
 main {
@@ -91,8 +105,8 @@ main {
 }
 
 .card:hover {
-  transform: translate(3px, -3px);
-  box-shadow: -3px 3px 13px rgba(138, 92, 246, 0.6);
+  box-shadow: 0 0 13px rgba(138, 92, 246, 0.6);
+  transform: translateY(-6px) scale(1.02);
 }
 
 .simon_master_logo {
@@ -106,7 +120,7 @@ main {
   margin-top: 4rem;
   display: flex;
   font-size: 2rem;
-  gap: 1px;
+  gap: 0px;
 }
 
 .simon span:nth-child(1) {
@@ -124,7 +138,6 @@ main {
 .simon span:nth-child(5) {
   color: rgb(150, 10, 150);
 }
-
 
 .master {
   font-size: 2rem;
@@ -144,13 +157,32 @@ main {
 
   background:
     linear-gradient(#041241, #041241) padding-box,
-    linear-gradient(to right, red, orange, yellow, green, blue, purple)
+    conic-gradient(
+        from var(--angle),
+        red 0deg 60deg,
+        orange 60deg 120deg,
+        yellow 120deg 180deg,
+        green 180deg 240deg,
+        blue 240deg 300deg,
+        purple 300deg 360deg
+      )
       border-box;
+  animation: rotate-border 10s linear infinite;
 }
 
 .dp_card {
-  border: 3px solid;
-  border-color: #0876ad #0876ad #1f4068 #1f4068;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#041241, #041241) padding-box,
+    conic-gradient(
+        from var(--angle),
+        #0876ad 0deg 90deg,
+        #1f4068 90deg 180deg,
+        #0876ad 180deg 270deg,
+        #1f4068 270deg 360deg
+      )
+      border-box;
+  animation: rotate-border 10s linear infinite;
 }
 
 .dp_logo {
@@ -182,8 +214,18 @@ main {
 }
 
 .ttg_card {
-  border: 3px solid;
-  border-color: #ff8c42 #ff8c42 #f5f7fa #f5f7fa;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#041241, #041241) padding-box,
+    conic-gradient(
+        from var(--angle),
+        #ff8c42 0deg 90deg,
+        #f5f7fa 90deg 180deg,
+        #ff8c42 180deg 270deg,
+        #f5f7fa 270deg 360deg
+      )
+      border-box;
+  animation: rotate-border 10s linear infinite;
 }
 
 .ttg_logo {
@@ -280,5 +322,17 @@ main {
   .tac,
   .goo {
     font-size: 2.5rem;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate-border {
+  to {
+    --angle: 360deg;
   }
 }

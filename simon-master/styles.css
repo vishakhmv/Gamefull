@@ -8,6 +8,7 @@ body {
   font-size: 2rem;
   margin: 3%;
   color: #fef2bf;
+  line-height: 3rem;
 }
 
 .container {
@@ -87,8 +88,6 @@ body {
 }
 
 .home {
-  padding: 1rem 2rem;
-  margin-top: 2rem;
   font-size: 2vmin;
   font-weight: bolder;
   background: linear-gradient(145deg, #0d1736, #070e22);
@@ -102,8 +101,10 @@ body {
     -0.15rem 0 0.5rem #a07fef,
     0 0.15rem 0.5rem rgba(245, 247, 250, 0.6);
   cursor: pointer;
-  transition:
-    transform 0.1s ease,
+  transition: transform 0.1s ease;
+  height: 3rem;
+  width: 8rem;
+  margin-top: -1rem;
 }
 
 .home:hover {
@@ -112,4 +113,64 @@ body {
   box-shadow:
     -0.35rem 0 0.65rem #a07fef,
     0 0.35rem 0.65rem rgba(245, 247, 250, 0.6);
+}
+
+.start {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1rem;
+  background-color: #fef2bf;
+  color: #011f3f;
+  border: 3px solid #011f3f;
+  text-decoration: none;
+  display: inline-block;
+  height: 3rem;
+  width: 8rem;
+}
+
+.start:hover {
+  background-color: #ffd700;
+  color: #011f3f;
+  border-color: #ffd700;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+@media (max-width: 1000px) {
+  #level-title {
+    font-size: 1.8rem;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .btn {
+    margin: 25px;
+    height: 150px;
+    width: 150px;
+    border-width: 6px;
+  }
+}
+
+@media (min-width: 1001px) and (max-width: 1500px) {
+  #level-title {
+    font-size: 1.5rem;
+  }
+  .btn {
+    margin: 20px;
+    height: 130px;
+    width: 130px;
+    border-width: 6px;
+  }
 }
