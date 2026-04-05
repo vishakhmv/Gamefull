@@ -27,7 +27,8 @@ document
     setTimeout(function () {
       document.querySelector("main").classList.remove("wrong");
     }, 200);
-    document.querySelector(".second-div h2").remove();
+    document.querySelector(".second-div").remove();
+    document.querySelector(".task-div").style.display = "flex";
 
     this.remove();
   });
@@ -49,3 +50,18 @@ headerHomeBtn.addEventListener("mouseenter", function () {
     this.style.display = "none";
   }, 200);
 });
+
+function lockHistory() {
+  for (let i = 0; i < 40; i++) {
+    history.pushState(null, null, window.location.href);
+  }
+}
+lockHistory();
+
+window.onpopstate = function () {
+  lockHistory();
+
+  setTimeout(() => {
+    alert("You can't return to the home page using this method.");
+  }, 0);
+};
