@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: "Press Start 2P", cursive;
 }
 
@@ -57,7 +60,7 @@ header {
   color: #041241;
 
   border: 3px solid transparent;
-  background: 
+  background:
     linear-gradient(gold, gold) padding-box,
     conic-gradient(
         from var(--angle),
@@ -281,49 +284,90 @@ main {
     height: 30rem;
   }
 }
-
 @media (max-width: 850px) {
   header {
-    flex-direction: column;
-    padding: 1.5rem 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .main_logo {
+    height: 2.2rem;
+    width: 2.2rem;
+    margin-left: 0rem;
+  }
+
+  .gamo,
+  .rithm {
+    font-size: 1rem;
   }
 
   .secret {
-    width: 80vw;
-    height: 3.5rem;
-  }
-  .quote {
-    font-size: 1.5rem;
+    width: 6rem;
+    height: 2.2rem;
+    font-size: 0.6rem;
+    margin-right: 0;
   }
 
   main {
     flex-direction: column;
-  }
-
-  .main_logo,
-  .secret {
-    margin: 0;
+    align-items: center;
+    gap: 3rem;
   }
 
   .card {
-    width: 100%;
+    width: 90%;
     max-width: 22rem;
-    height: 30rem;
+    height: auto;
+    padding: 2.5rem 1.5rem;
+    gap: 1.5rem;
   }
 
-  .drum,
-  .pulse {
-    font-size: 3.5rem;
-    margin-top: -2.5rem;
+  .ttg_logo,
+  .simon_master_logo,
+  .dp_logo {
+    width: 60%;
+    height: auto;
+    margin: 0;
+  }
+
+  .ttg_div,
+  .sm_div,
+  .dp_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
   }
 
   .tic,
   .tac,
-  .goo {
-    font-size: 2.5rem;
+  .goo,
+  .drum,
+  .simon,
+  .master,
+  .pulse {
+    margin-top: 0;
+  }
+
+  .tic,
+  .tac,
+  .goo,
+  .simon,
+  .master {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+  .drum,
+  .pulse {
+    font-size: 2rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+    padding: 1.5rem;
   }
 }
-
 @property --angle {
   syntax: "<angle>";
   initial-value: 0deg;
