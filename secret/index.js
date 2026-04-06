@@ -28,6 +28,7 @@ document
       document.querySelector("main").classList.remove("wrong");
     }, 200);
     document.querySelector(".second-div").remove();
+    document.querySelector(".third-fooled").style.display = "block";
     document.querySelector(".task-div").style.display = "flex";
 
     this.remove();
@@ -66,3 +67,13 @@ document
   .querySelector(".main_logo")
   .addEventListener("click", handleIdentityClick);
 document.querySelector(".title").addEventListener("click", handleIdentityClick);
+
+const quitBtn = document.getElementById("quitBtn");
+const mainContainer = document.querySelector(".main-container");
+const homeContainer = document.querySelector(".home-container");
+
+quitBtn.addEventListener("click", () => {
+  mainContainer.style.display = "none";
+
+  homeContainer.style.display = "flex";
+});
