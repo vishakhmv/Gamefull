@@ -45,17 +45,17 @@ function animatePress(currentColour) {
 
 $(document).keypress(function (event) {
   if (!start) {
-    nextSequence();
     start = true;
-    $(".start").fadeOut().prop("disabled", true);
+    $(".start").text("Started").prop("disabled", true);
+    nextSequence();
   }
 });
 
 $(document).on("click", ".start", function () {
   if (!start) {
-    nextSequence();
     start = true;
-    $(".start").fadeOut().prop("disabled", true);
+    $(".start").text("Started").prop("disabled", true);
+    nextSequence();
   }
 });
 
@@ -88,7 +88,7 @@ function startOver() {
   level = 0;
   gamePattern = [];
   start = false;
-  $(".start").fadeIn().prop("disabled", false);
+  $(".start").text("Start").prop("disabled", false);
 }
 
 function shuffleButtons() {
@@ -117,3 +117,5 @@ function shuffleButtons() {
   container.append(row1);
   container.append(row2);
 }
+
+function startGameUI() {}
