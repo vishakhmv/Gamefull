@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="index-how-to-play.css" />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="images/logo.png" alt="logo" />
+      <h1 class="orange-h name">Tic</h1>
+      <h1 class="white-h name">Tac</h1>
+      <h1 class="orange-h name">Goo</h1>
+      <h1 class="main-heading white-h starting-main-heading">Tic</h1>
+      <h1 class="main-heading orange-h">Tac</h1>
+      <h1 class="main-heading white-h">Toe</h1>
+    </header>
+
+    <main>
+      <h2 class="how-to-title">How to Play</h2>
+      <div class="container">
+        <ol class="how-to-list">
+          <li>
+            This is a two-player game. One player plays with
+            <span class="x">X</span> and the other plays with
+            <span class="o">O</span>.
+          </li>
+
+          <li>
+            The game always begins with <span class="x">X</span>. After that,
+            <span class="o">O</span> takes the next turn.
+          </li>
+
+          <li>
+            Players take turns clicking any empty box to place their symbol.
+          </li>
+
+          <li>
+            The first player to align three identical symbols in a straight line
+            (horizontal, vertical, or diagonal) wins the match.
+          </li>
+
+          <li>
+            Only the <strong>last 6 moves</strong> remain visible on the board
+            at all times.
+          </li>
+
+          <li>
+            When the move limit is reached, the
+            <strong>oldest active move</strong>
+            turns red to show that it will be removed next.
+          </li>
+
+          <li>
+            When a new move is played after this, the red (oldest) block is
+            removed automatically from the board.
+          </li>
+
+          <li>
+            You can press the <strong>Reset Game</strong> button at any time to
+            start a fresh match.
+          </li>
+
+          <li>
+            Feeling confident? Tap <strong>Try Quad Strike</strong> to play the
+            larger and more challenging 5x5 version!
+          </li>
+        </ol>
+
+        <p class="quote">
+          <span>“Think smart, play bold — every move counts!”</span>
+        </p>
+      </div>
+      <div class="back-btn-container">
+        <button class="back-btn" onclick="window.location.href='index.html'">
+          Back to Game
+        </button>
+      </div>
+    </main>
+  </body>
+</html>
