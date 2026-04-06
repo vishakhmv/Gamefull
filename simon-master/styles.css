@@ -156,15 +156,15 @@ body {
 
   .btn {
     margin: 25px;
-    height: 200px;
-    width: 200px;
+    height: 180px;
+    width: 180px;
     border-width: 6px;
   }
 
   .start {
     margin-top: 3rem;
     height: 5rem;
-    width: 29rem;
+    width: 26rem;
   }
 
   .home {
