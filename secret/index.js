@@ -15,6 +15,7 @@ document
     document.querySelector(".demo-home").style.display = "block";
     document.querySelector(".fooled-again").style.display = "block";
     document.querySelector(".second-div").style.display = "flex";
+    document.querySelector(".hc-h2").style.display = "none";
     this.remove();
   });
 
