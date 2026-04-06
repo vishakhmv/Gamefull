@@ -104,7 +104,6 @@ body {
   transition: transform 0.1s ease;
   height: 3rem;
   width: 8rem;
-  margin-top: -1rem;
 }
 
 .home:hover {
@@ -157,9 +156,21 @@ body {
 
   .btn {
     margin: 25px;
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 230px;
     border-width: 6px;
+  }
+
+  .start {
+    margin-top: 3rem;
+    height: 4rem;
+    width: 9rem;
+  }
+
+  .home {
+    margin-top: 1rem;
+    height: 4rem;
+    width: 9rem;
   }
 }
 
@@ -172,5 +183,13 @@ body {
     height: 130px;
     width: 130px;
     border-width: 6px;
+  }
+
+  .start {
+    margin-top: 3rem;
+  }
+
+  .home {
+    margin-top: 1rem;
   }
 }
