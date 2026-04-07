@@ -12,7 +12,7 @@ body {
 header {
   display: flex;
   height: auto;
-  padding: 1rem;
+  padding: 1.2rem;
 
   border-bottom: 2px solid transparent;
 
@@ -300,7 +300,7 @@ main {
   header {
     flex-direction: row;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 1.2rem .9rem;
   }
 
   .main_logo {
