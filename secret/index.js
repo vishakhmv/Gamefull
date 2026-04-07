@@ -44,7 +44,7 @@ headerHomeBtn.addEventListener("mouseenter", function () {
   v.play();
   this.classList.add("erase-animation");
   instructionText.innerText =
-    "The button that redirects you to the home page is here";
+    "The button that redirects you to the home page is here.";
 
   secondBtnContainer.style.display = "flex";
 
