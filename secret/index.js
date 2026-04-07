@@ -73,8 +73,20 @@ const quitBtn = document.getElementById("quitBtn");
 const mainContainer = document.querySelector(".main-container");
 const homeContainer = document.querySelector(".home-container");
 
-quitBtn.addEventListener("click", () => {
-  mainContainer.style.display = "none";
+const quitOverlay = document.getElementById("quit-overlay");
+const btnYes = document.getElementById("btn-yes");
+const btnNo = document.getElementById("btn-no");
 
+quitBtn.addEventListener("click", () => {
+  quitOverlay.style.display = "flex";
+});
+
+btnYes.addEventListener("click", () => {
+  quitOverlay.style.display = "none";
+  mainContainer.style.display = "none";
   homeContainer.style.display = "flex";
+});
+
+btnNo.addEventListener("click", () => {
+  quitOverlay.style.display = "none";
 });
