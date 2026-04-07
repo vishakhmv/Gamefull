@@ -107,7 +107,7 @@ The challenge puts you through three mock trials to find the real exit. You are 
 2. Inspecting the page's source code to discover hidden developer routes.
 3. Checking out the repository's README page.
 
-**How to exit:** In order to exit the secret page, you must follow these specific steps: First, click on the **GitHub Repo** button, which will open the repository in a new tab. This action will secretly unlock the exit path by turning the game's logo and the "GameFull" name at the top of the secret page into a hidden link. You must then return to the secret page tab and click on either the logo or the "GameFull" text to be successfully redirected back to the home page! Alternatively, if you want to give up, there's a "QUIT" button.
+**How to exit:** In order to exit the secret page, you must follow these specific steps: First, click on the **GitHub Repo** button, which will open the repository in a new tab. This action will secretly unlock the exit path by turning the website's logo and the "GameFull" name at the top of the secret page into a hidden link. You must then return to the secret page tab and click on either the logo or the "GameFull" text to be successfully redirected back to the home page! Alternatively, if you want to give up, there's a "QUIT" button.
 
 ---
 
