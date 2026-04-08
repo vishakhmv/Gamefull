@@ -1,3 +1,7 @@
+alert(
+  "You were fooled😂. You requested Simon Master, but navigated to Drum Pulse.",
+);
+
 var nofb=document.querySelectorAll(".drum").length;
 
 for(var i=0;i<nofb;i++){

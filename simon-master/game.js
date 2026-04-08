@@ -1,3 +1,4 @@
+alert("You were fooled😂. You requested Tic-Tac-Goo, but navigated to Simon Master.");
 gamePattern = [];
 buttonColours = ["red", "blue", "green", "yellow", "purple", "orange"];
 userClickedPattern = [];

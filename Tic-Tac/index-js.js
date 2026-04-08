@@ -1,10 +1,13 @@
+alert(
+  "You were fooled😂. You requested Drum Pulse, but navigated to Tic-Tac-Goo.",
+);
+
 let boxes = document.querySelectorAll(".box");
 let resetBtn = document.querySelector("#reset-btn");
 let xoro = document.querySelector(".x-or-o");
 let bq = [];
 let gameOver = false;
 let w = new Audio("sounds/winner.mp3");
-
 
 xoro.classList.add("orange");
 
