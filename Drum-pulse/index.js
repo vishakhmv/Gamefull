@@ -1,5 +1,5 @@
 alert(
-  "You were fooled😂. You requested Simon Master, but navigated to Drum Pulse.",
+  "You were fooled😂. You requested Simon Master, but the home page redirected you to Drum Pulse."
 );
 
 var nofb = document.querySelectorAll(".drum").length;

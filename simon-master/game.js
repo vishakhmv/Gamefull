@@ -1,5 +1,5 @@
 alert(
-  "You were fooled😂. You requested Tic-Tac-Goo, but navigated to Simon Master.",
+  "You were fooled😂. You requested Tic Tac Goo, but the home page redirected you to Simon Master."
 );
 gamePattern = [];
 buttonColours = ["red", "blue", "green", "yellow", "purple", "orange"];

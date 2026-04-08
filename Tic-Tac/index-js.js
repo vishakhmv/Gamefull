@@ -1,5 +1,5 @@
 alert(
-  "You are fooled😂. You requested for Drum-Pulse but navigated to Tic-Tac-Goo",
+  "You were fooled😂. You requested Drum Pulse, but the home page redirected you to Tic Tac Goo.",
 );
 
 let boxes = document.querySelectorAll(".box");
