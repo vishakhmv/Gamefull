@@ -1,59 +1,57 @@
 body {
   margin: 0px;
-  background-color: #1F4068;
+  background-color: #1f4068;
 }
-.heading{
-    text-align: center;
+.heading {
+  text-align: center;
 }
-
 
 h1 {
   display: inline-block;
   font-size: 4rem;
-  color: #EAF6FF;
+  color: #eaf6ff;
   font-family: "Arvo", cursive;
-  text-shadow: 3px 0 #1E90FF;
+  text-shadow: 3px 0 #1e90ff;
 }
 
-.logo{
+.logo {
   height: 8rem;
   width: 13rem;
   margin-left: 1rem;
   margin-right: 1rem;
 }
 
-h2{
-  color: #EAF6FF;
+h2 {
+  color: #eaf6ff;
   font-family: "Arvo", cursive;
   font-size: 2rem;
   margin-top: -2rem;
-  text-shadow: 3px 0 #1E90FF;
+  text-shadow: 3px 0 #1e90ff;
 }
 
-h3{
-    color: white;
-    font-family: "Arvo",cursive;
-    font-size: 2.5rem;
+h3 {
+  color: white;
+  font-family: "Arvo", cursive;
+  font-size: 2.5rem;
 }
 
 .instructions {
-    width: 60%;
-    margin: 1rem auto;
-    padding: 2rem 7%;
-    font-size: 1.2rem;
-    line-height: 1.6;
-    text-align: left;
-    border: 2px solid #1E90FF;
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    color: #ffffff;
+  width: 60%;
+  margin: 1rem auto;
+  padding: 2rem 7%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: left;
+  border: 2px solid #1e90ff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
 }
 
-
-li{
-    font-size: 1.4rem;
-    font-family: "Arvo",cursive;
+li {
+  font-size: 1.4rem;
+  font-family: "Arvo", cursive;
 }
 
 .back_btn {
@@ -68,29 +66,28 @@ li{
   border: 2px solid white;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .back_btn:hover {
   background-color: #0d9ad2;
-  box-shadow: 0 4px 4px rgba(10,158,232,0.5);
+  box-shadow: 0 4px 4px rgba(10, 158, 232, 0.5);
 }
 
-.last_div{
-    display: flex;
-    justify-content: center;
+.last_div {
+  display: flex;
+  justify-content: center;
 }
 
 .yellow-text {
-    color: #FFD700;
-    font-size: 1.4rem;
-    text-align: center;
-    margin-top: 1.5rem;
+  color: #ffd700;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 @media (max-width: 790px) {
-
-  body{
+  body {
     padding-top: 1.5rem;
   }
 
@@ -108,7 +105,38 @@ li{
     font-size: 1.2rem;
     margin-top: -0.5rem;
   }
-  h3{
+  h3 {
     font-size: 1.5rem;
+  }
+}
+
+.caution {
+  color: #ff4d4d;
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(255, 77, 77, 0.8);
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  22%,
+  24%,
+  55% {
+    opacity: 0.5;
+    text-shadow: none;
   }
 }
