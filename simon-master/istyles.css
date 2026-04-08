@@ -1,6 +1,6 @@
 .instructions {
-  font-family: 'Press Start 2P', cursive;
-  color: #FEF2BF;
+  font-family: "Press Start 2P", cursive;
+  color: #fef2bf;
   font-size: 1rem;
   margin: 50px auto;
   width: 80%;
@@ -11,23 +11,54 @@
 #back-btn {
   display: inline-block;
   margin-top: 30px;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
   font-size: 1rem;
-  color: #011F3F;
-  background-color: #FEF2BF;
+  color: #011f3f;
+  background-color: #fef2bf;
   padding: 10px 20px;
   text-decoration: none;
-  border: 3px solid #011F3F;
+  border: 3px solid #011f3f;
 }
 
 #back-btn:hover {
-  background-color: #FFD700;
-  color: #011F3F;
-  border-color: #FFD700;
+  background-color: #ffd700;
+  color: #011f3f;
+  border-color: #ffd700;
 }
 
 body {
-  background-color: #011F3F;
+  background-color: #011f3f;
   text-align: center;
   padding: 20px;
+}
+
+.caution {
+  color: #ff4d4d;
+  text-align: center;
+  margin: 2rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(255, 77, 77, 0.8);
+  animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    opacity: 1;
+  }
+  20%,
+  22%,
+  24%,
+  55% {
+    opacity: 0.5;
+    text-shadow: none;
+  }
 }

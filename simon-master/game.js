@@ -1,15 +1,28 @@
-alert("You were fooled😂. You requested Tic-Tac-Goo, but navigated to Simon Master.");
+alert(
+  "You were fooled😂. You requested Tic-Tac-Goo, but navigated to Simon Master.",
+);
 gamePattern = [];
 buttonColours = ["red", "blue", "green", "yellow", "purple", "orange"];
 userClickedPattern = [];
 var start = false;
 var level = 0;
 var highScore = 0;
+const prankMap = {
+  green: "lime",
+  red: "brown",
+  purple: "teal",
+  yellow: "pink",
+  blue: "cyan",
+  orange: "grey",
+};
 
 function nextSequence() {
   userClickedPattern = [];
   var randomNumber = Math.floor(Math.random() * buttonColours.length);
   var randomChosenColour = buttonColours[randomNumber];
+  if (level > 4) {
+    applyPrankColors();
+  }
   gamePattern.push(randomChosenColour);
   shuffleButtons();
   $("#" + randomChosenColour)
@@ -119,4 +132,10 @@ function shuffleButtons() {
   container.append(row2);
 }
 
-function startGameUI() {}
+function applyPrankColors() {
+  $(".btn").each(function () {
+    let id = this.id;
+    $(this).removeClass("red blue green yellow purple orange");
+    $(this).addClass(prankMap[id]);
+  });
+}

@@ -193,3 +193,10 @@ body {
     margin-top: 1rem;
   }
 }
+
+.brown { background-color: #5C4033 !important; }
+.cyan { background-color: #00FFFF !important; }
+.pink { background-color: #FF69B4 !important; }
+.lime { background-color: #32CD32 !important; }
+.teal { background-color: #008080 !important; }
+.grey { background-color: #808080 !important; }
