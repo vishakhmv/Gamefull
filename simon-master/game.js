@@ -103,6 +103,7 @@ function startOver() {
   gamePattern = [];
   start = false;
   $(".start").text("Start").prop("disabled", false);
+  resetColors();
 }
 
 function shuffleButtons() {
@@ -137,5 +138,13 @@ function applyPrankColors() {
     let id = this.id;
     $(this).removeClass("red blue green yellow purple orange");
     $(this).addClass(prankMap[id]);
+  });
+}
+
+function resetColors() {
+  $(".btn").each(function () {
+    let id = this.id;
+    $(this).removeClass("brown cyan pink lime teal grey");
+    $(this).addClass(id);
   });
 }
