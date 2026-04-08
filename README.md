@@ -15,7 +15,8 @@ Tic Tac Goo is a fully interactive web-based mini-game collection featuring two 
 
 ### Game Modes
 
-😈 **Troll Feature:** Both game modes in Tic Tac Goo are cursed! The turn indicator will intentionally malfunction and display the **wrong turn** to constantly mess with players' heads.
+😈 **Troll Feature:** Both game modes in Tic Tac Goo are cursed! The turn indicator will intentionally malfunction and display the **wrong turn** to mess with players’ heads.  
+And just when you think you’ve won… the game pulls its final prank—if **X wins, it shows O as the winner**, and if **O wins, it shows X instead!**
 
 #### 1. Tic Tac Toe (3x3)
 This mode follows the traditional two-player Tic Tac Toe format:
