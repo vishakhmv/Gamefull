@@ -92,7 +92,7 @@ btnYes.addEventListener("click", () => {
 btnNo.addEventListener("click", () => {
   quitOverlay.style.display = "none";
 });
-// --- Math Prank Logic (Class Only) ---
+
 const inputs = document.querySelectorAll(".math-in");
 const texts = document.querySelectorAll(".q-txt");
 const mathSubmit = document.querySelector(".btn-submit");
@@ -137,6 +137,8 @@ mathSubmit.addEventListener("click", () => {
     u2 = Number(inputs[1].value);
 
   if (u1 !== ans1 || u2 !== ans2) {
+    let k = new Audio("../simon-master/sounds/wrong.mp3");
+    k.play();
     mathMsg.innerText = "Wrong! Try again.";
     mathMsg.style.color = "#ff4757";
     mainUI.classList.add("wrong");
@@ -147,6 +149,8 @@ mathSubmit.addEventListener("click", () => {
     c--;
 
     if (correctAnswers < 5) {
+      let l = new Audio("../simon-master/sounds/wrong.mp3");
+      l.play();
       mathMsg.innerText =
         "WRONG! Are you sure you're reading the numbers correctly? 😜";
       mathMsg.style.color = "#ff4757";
