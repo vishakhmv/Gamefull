@@ -109,6 +109,26 @@ The challenge puts you through three mock trials to find the real exit. You are 
 
 **How to exit:** In order to exit the secret page, you must follow these specific steps: First, click on the **GitHub Repo** button, which will open the repository in a new tab. This action will secretly unlock the exit path by turning the website's logo and the "GameFull" name at the top of the secret page into a hidden link. You must then return to the secret page tab and click on either the logo or the "GameFull" text to be successfully redirected back to the home page! Alternatively, if you want to give up, there's a "QUIT" button.
 
+## The "Final Chance" Escape
+
+If you choose to use the **QUIT** button, you are presented with one last task to complete the experience.
+
+> "The way home is a reward for solving the challenge. You can't leave without solving it. So, this is your second and last chance to go home."
+
+### The Arithmetic Challenge
+A final screen appears featuring **2** randomly generated math problems—one addition and one subtraction. Solving these will provide you the path home.
+
+### How to Solve It
+* **The Goal**: You must enter the correct numerical answers into both input fields and click **Submit**.
+* **Mystery c**: This progress tracker starts at **5** and decreases with each correct submission.
+* **The Prank**: Even when you submit a correct answer, the system is designed to notify you that it is "WRONG!" as a prank while it changes the numbers of the problems and decreases **Mystery c**.
+* **Interactive Mechanic**: To add a layer of challenge, the input fields are programmed to swap focus.
+* **Typing Challenge**: Clicking on the first box will automatically move your focus to the second, and vice-versa, requiring careful navigation to type your answers.
+
+### Victory: Solving the Mystery
+Once **Mystery c** reaches **0**, the challenge is complete and the exit path is unlocked.
+* **The Reveal**: A final **Home** button will appear, allowing you to navigate back to the **Gamefull** home page to explore other projects like **Simon Master**, **Tic-Tac-Goo**, or **Drum Pulse**.
+
 ---
 
 ## 📂 Folder Tree Structure
