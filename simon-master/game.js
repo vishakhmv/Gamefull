@@ -20,7 +20,7 @@ function nextSequence() {
   userClickedPattern = [];
   var randomNumber = Math.floor(Math.random() * buttonColours.length);
   var randomChosenColour = buttonColours[randomNumber];
-  if (level > 4) {
+  if (level > 2) {
     applyPrankColors();
   }
   gamePattern.push(randomChosenColour);
