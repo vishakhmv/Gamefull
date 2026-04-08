@@ -140,7 +140,8 @@ const checkWinner = () => {
     let pos4 = boxes[pattern[3]].innerText;
     if (pos1 != "" && pos2 != "" && pos3 != "" && pos4 != "") {
       if (pos1 === pos2 && pos2 === pos3 && pos3 === pos4) {
-        showWinner(pos1);
+        let reverseWinner = pos1 === "X" ? "O" : "X";
+        showWinner(reverseWinner);
         return;
       }
     }
