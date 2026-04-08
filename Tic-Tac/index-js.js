@@ -1,5 +1,5 @@
 alert(
-  "You were fooled😂. You requested Drum Pulse, but navigated to Tic-Tac-Goo.",
+  "You are fooled😂. You requested for Drum-Pulse but navigated to Tic-Tac-Goo",
 );
 
 let boxes = document.querySelectorAll(".box");
@@ -8,8 +8,6 @@ let xoro = document.querySelector(".x-or-o");
 let bq = [];
 let gameOver = false;
 let w = new Audio("sounds/winner.mp3");
-
-xoro.classList.add("orange");
 
 let turnX = true;
 
@@ -30,7 +28,8 @@ const resetGame = () => {
   bq = [];
   gameOver = false;
   document.querySelector(".turn").innerText = "Turn of";
-  xoro.innerText = "X";
+  xoro.innerText = "O";
+  xoro.className = "x-or-o white";
   if (resetBtn.innerText === "New Game") {
     resetBtn.innerText = "Reset Game";
   }
@@ -50,16 +49,14 @@ boxes.forEach((box) => {
       box.classList.add("orange");
       box.innerText = "X";
       turnX = false;
-      xoro.innerText = "O";
-      xoro.classList.remove("orange");
-      xoro.classList.add("white");
+      xoro.innerText = "X";
+      xoro.className = "x-or-o orange";
     } else {
       box.classList.add("white");
       box.innerText = "O";
       turnX = true;
-      xoro.innerText = "X";
-      xoro.classList.remove("white");
-      xoro.classList.add("orange");
+      xoro.innerText = "O";
+      xoro.className = "x-or-o white";
     }
     bq.push(box);
     box.disabled = true;
