@@ -1,6 +1,6 @@
 # 🎮 GameFull
 
-**GameFull** is a web-based mini-game hub designed to bring together a collection of engaging, interactive, and responsive browser games into one seamless experience. It serves as a central arcade where users can easily access and switch between different uniquely styled games. Built entirely with HTML, CSS, and JavaScript, GameFull demonstrates clean, responsive design, audio integrations, and custom logic.
+**GameFull** is a web-based mini-game hub designed to bring together a collection of engaging, interactive, and responsive browser games into one seamless experience. It serves as a central arcade where users can easily access and switch between different uniquely styled games... but beware! The hub is also riddled with built-in pranks to troll players, starting right from the **wrong navigation links** on the homepage. Built entirely with HTML, CSS, and JavaScript, GameFull demonstrates clean, responsive design, audio integrations, custom logic, and a chaotic sense of humor.
 
 This repository features the following game collections:
 - **Tic Tac Goo**
@@ -14,6 +14,8 @@ This repository features the following game collections:
 Tic Tac Goo is a fully interactive web-based mini-game collection featuring two game modes. The project focuses on game logic, responsive UI design, and rule-based gameplay.
 
 ### Game Modes
+
+😈 **Troll Feature:** Both game modes in Tic Tac Goo are cursed! The turn indicator will intentionally malfunction and display the **wrong turn** to constantly mess with players' heads.
 
 #### 1. Tic Tac Toe (3x3)
 This mode follows the traditional two-player Tic Tac Toe format:
@@ -58,7 +60,8 @@ Quad Strike is a more competitive and strategic version played on a 5x5 grid:
 Inspired by the original Simon Game (which has only 4 buttons that stay in the same place every round), I wanted to create a harder version. In **Simon Master**, I:
 
 - 🔹 Added **6 colorful buttons** instead of 4.
-- 🔹 **Shuffled the button positions** on every level to make it much harder
+- 🔹 **Shuffled the button positions** on every level to make it much harder.
+- 😈 **Troll Feature:** The game introduces distracting **new colors intro** at level 5 to confuse players and break their concentration!
 - 🔹 Included **high score tracking** so you can challenge yourself as well as your friends.
 - 🔹 Added a "**How to Play**" button for new players.
 
@@ -79,6 +82,7 @@ Each drum element — such as the snare, toms, cymbals, etc. — produces a dist
 -  Keyboard and mouse support for flexible playing
 -  Smooth performance across all screen sizes
 -  A dedicated “How to Use” page for beginners charting controls and key mappings
+- 😈 **Troll Features:** The kit is cursed! It features **wrong sounds, mismatched pictures, and incorrect key notations** for pranking user!
 
 #### 2. Drum Kit Simon Mode
 This mode transforms drumming into a Simon-style memory challenge that tests both rhythm and recall.
