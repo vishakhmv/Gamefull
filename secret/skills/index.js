@@ -37,7 +37,7 @@ async function runScan() {
   playAudio("../../simon-master/sounds/wrong.mp3");
   document.getElementById("screen").classList.add("shake");
   document.getElementById("terminal").innerHTML +=
-    `<div class="error">❌ RESULT:<br><br>404 - No skill found</div>`;
+    `<div class="error">❌ RESULT:<br><br>404 - No skills found</div>`;
 
   await sleep(1500);
 
