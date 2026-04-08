@@ -61,7 +61,7 @@ Inspired by the original Simon Game (which has only 4 buttons that stay in the s
 
 - 🔹 Added **6 colorful buttons** instead of 4.
 - 🔹 **Shuffled the button positions** on every level to make it much harder.
-- 😈 **Troll Feature:** The game introduces distracting **new colors intro** at level 5 to confuse players and break their concentration!
+- 😈 **Troll Feature:** The game introduces distracting **new colors intro** at level 4 to confuse players and break their concentration!
 - 🔹 Included **high score tracking** so you can challenge yourself as well as your friends.
 - 🔹 Added a "**How to Play**" button for new players.
 
